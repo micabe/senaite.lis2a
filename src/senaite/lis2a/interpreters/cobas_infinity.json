@@ -1,0 +1,22 @@
+{
+  "id": "COBAS_INFINITY",
+  "extends": "LIS2-A2",
+  "selection_criteria": {
+    "H.SenderName": "cobas infinity"
+  },
+  "result_criteria": {
+    "R.ResultStatus": "F"
+  },
+  "mappings": {
+    "id": ["O.InstrumentSpecimenID"],
+    "keyword": ["R.UniversalTestID_Type", "R.UniversalTestID_ManufacturerCode"],
+    "result": "R.Measurement",
+    "ranges": "R.ReferenceRanges",
+    "units": "R.Units",
+    "capture_date": "R.DateTimeCompleted",
+    "captured_by": ["R.OperatorIdentification", "R.VerifierIdentification"]
+  },
+  "O": {
+    "InstrumentSpecimenID": [3, 2]
+  }
+}

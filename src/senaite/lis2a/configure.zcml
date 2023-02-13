@@ -35,4 +35,8 @@
       post_handler="senaite.lis2a.setuphandlers.post_uninstall"
       provides="Products.GenericSetup.interfaces.EXTENSION" />
 
+  <plone:static
+      directory="interpreters"
+      type="senaite.lis2a.interpreters" />
+
 </configure>
